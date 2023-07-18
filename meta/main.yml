@@ -21,8 +21,8 @@ galaxy_info:
     - tor
     - web
 
-dependencies:
-  - role: systemli.apt_repositories
-    vars:
-      apt_repositories:
-        - preset: torproject
+dependencies: []
+# - role: systemli.apt_repositories
+#   vars:
+#     apt_repositories:
+#       - preset: torproject
