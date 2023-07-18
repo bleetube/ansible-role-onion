@@ -63,6 +63,13 @@
 {{ key }} {{ value }}
 {% endfor %}
 
+{% if bridges %}
+UseBridges 1
+{% for bridge in bridges %}
+Bridge {{ bridge }}
+{% endfor %}
+{% endif %}
+
 {% for client in onion_hid_serv_auth -%}
 HidServAuth {{ client }}
 {% endfor -%}
